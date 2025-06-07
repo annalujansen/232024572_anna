@@ -1,6 +1,140 @@
-O programa foi depurado utilizando o GDB. Foi inserido um breakpoint na função verifica_jogo_da_velha e utilizados os comandos run, next, step e print para inspecionar valores no tabuleiro durante a execução de testes. A depuração foi bem-sucedida.
+# TP2 - Verificador de Estado do Jogo da Velha
 
-A cobertura de código foi verificada usando o gcov.
-O arquivo `src/velha.cpp` atingiu 100% de cobertura.
-Comando usado:
-  gcov src/velha.cpp
+Este projeto, desenvolvido com base na metodologia TDD (Test-Driven Development), consiste na implementação de uma função capaz de verificar o estado de uma partida de jogo da velha, representada por uma matriz 3x3 de inteiros.
+
+## Estrutura do Projeto
+
+- `src/velha.cpp`: implementação da função `verifica_jogo_da_velha`.
+- `include/jogo/velha.hpp`: cabeçalho da função.
+- `testa_velha.cpp`: arquivo contendo os testes unitários com Catch2.
+- `lib/catch.hpp`: biblioteca de testes.
+- `Makefile`: automatiza compilação, execução, testes, documentação e ferramentas auxiliares.
+- `Doxyfile`: arquivo de configuração do Doxygen.
+- `docs/`: pasta gerada com a documentação automática do código.
+
+---
+
+## Compilação e Execução
+
+Para compilar e executar os testes:
+
+make
+
+Para compilar sem executar:
+
+make compile
+
+---
+
+## Testes
+
+Foram desenvolvidos 22 casos de teste, abrangendo:
+
+- Vitórias por linha, coluna e diagonais (para ambos os jogadores);
+- Jogo indefinido (em andamento);
+- Empate (tabuleiro cheio sem vencedor);
+- Casos inválidos, como dois vencedores ou número de jogadas impossível.
+
+Cada teste foi precedido por um commit falho, seguindo a metodologia TDD, totalizando no mínimo 30 commits.
+
+---
+
+## Depuração com GDB
+
+O programa foi depurado utilizando o GDB. Foi inserido um breakpoint na função `verifica_jogo_da_velha`, e utilizados os comandos:
+
+- `run`: para iniciar o programa;
+- `break`: para definir pontos de parada;
+- `next` / `step`: para executar o código passo a passo;
+- `print`: para inspecionar valores do tabuleiro.
+
+A depuração foi bem-sucedida e permitiu validar a lógica interna da função.
+
+---
+
+## Cobertura com GCOV
+
+A cobertura de código foi verificada utilizando gcov:
+
+Comando utilizado:
+
+```bash
+gcov src/velha.cpp
+```
+
+Resultado:
+
+- 100% de cobertura de linha no arquivo `src/velha.cpp`.
+
+---
+
+## Verificação com Valgrind
+
+O programa foi executado com Valgrind para garantir a ausência de vazamentos de memória ou acessos inválidos.
+
+Comando utilizado:
+
+```bash
+make valgrind
+```
+
+Resultado:
+
+```
+All heap blocks were freed -- no leaks are possible
+ERROR SUMMARY: 0 errors from 0 contexts
+```
+
+---
+
+## Estilo e Análise Estática
+
+### cpplint
+
+O estilo do código foi verificado com o `cpplint`, seguindo o Google C++ Style Guide (exceto `catch.hpp`, que foi excluído):
+
+```bash
+make cpplint
+```
+
+### cppcheck
+
+Foi utilizado o `cppcheck` para análise est
+ática, com as seguintes opções:
+
+```bash
+make cppcheck
+```
+
+---
+
+## Documentação
+
+A documentação foi gerada com Doxygen. Para gerar novamente, utilize:
+
+```bash
+make doc
+```
+
+O código-fonte foi documentado utilizando o estilo Javadoc, incluindo:
+
+- Cabeçalho com autoria e ano
+- Descrição e parâmetros da função principal
+
+---
+
+## Requisitos Atendidos
+
+✔️ Compilação automatizada com Makefile  
+✔️ Metodologia TDD (mínimo 30 commits)  
+✔️ Testes unitários com Catch2  
+✔️ Verificação de cobertura com gcov (≥ 80%)  
+✔️ Análise com cppcheck e cpplint  
+✔️ Depuração com GDB  
+✔️ Verificação dinâmica com Valgrind  
+✔️ Documentação gerada com Doxygen
+
+---
+
+Autora: Anna Luiza Jansen  
+Ano: 2025

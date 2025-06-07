@@ -33,7 +33,7 @@ cpplint:
 
 # Verificação estática com cppcheck
 cppcheck:
-	cppcheck --enable=warning --quiet --force -Iinclude -Isrc src/*.cpp testa_velha.cpp
+	cppcheck --enable=warning --quiet --force -Iinclude -Isrc -ilib src/*.cpp testa_velha.cpp
 
 # Geração de relatório de cobertura com gcov
 gcov:
@@ -47,7 +47,7 @@ gcov:
 debug:
 	$(CXX) $(CXXFLAGS) -o $(BIN) $(SRC) $(TEST)
 	gdb $(BIN)
-	
+
 # Valgrind
 valgrind: $(BIN)
 	valgrind --leak-check=full --track-origins=yes ./$(BIN)
