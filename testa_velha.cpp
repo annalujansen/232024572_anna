@@ -160,3 +160,12 @@ TEST_CASE("Vitória na diagonal secundária para O") {
     };
     REQUIRE(verifica_jogo_da_velha(tabuleiro) == 2);
 }
+
+TEST_CASE("Empate") {
+    int tabuleiro[3][3] = {
+        {1, 2, 1},
+        {2, 1, 2},
+        {2, 1, 2}
+    };
+    REQUIRE(verifica_jogo_da_velha(tabuleiro) == 0);
+}   
