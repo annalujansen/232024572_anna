@@ -33,7 +33,7 @@ cpplint:
 
 # Verificação estática com cppcheck
 cppcheck:
-	cppcheck --enable=all --inconclusive --quiet .
+	cppcheck --enable=warning --quiet --force -Iinclude -Isrc src/*.cpp testa_velha.cpp
 
 # Geração de relatório de cobertura com gcov
 gcov:

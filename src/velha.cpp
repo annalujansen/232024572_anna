@@ -10,9 +10,8 @@ int verifica_jogo_da_velha(int tabuleiro[3][3]) {
             tabuleiro[0][1] == tabuleiro[0][2]) && tabuleiro[0][0] != 0)
             { return tabuleiro[0][0]; }  // Vitória na primeira linha
         if ((tabuleiro[2][0] == tabuleiro[2][1] &&
-            tabuleiro[2][1] == tabuleiro[2][2]) && tabuleiro[2][0] && 
-            tabuleiro[2][0] == 2 && tabuleiro[2][1] != 0)
-            { return tabuleiro[2][0]; }  // Vitória na terceira linha para O
+            tabuleiro[2][1] == tabuleiro[2][2]) && tabuleiro[2][0] != 0)
+            { return tabuleiro[2][0]; }  // Vitória na terceira linha
     }
     return -1;  // Jogo indefinido
 }
