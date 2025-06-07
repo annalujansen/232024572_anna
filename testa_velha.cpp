@@ -42,3 +42,13 @@ TEST_CASE("Vitória na primeira linha para X") {
 
     REQUIRE(verifica_jogo_da_velha(tabuleiro) == 1);
 }
+
+TEST_CASE("Vitória na primeira linha para O") {
+    int tabuleiro[3][3] = {
+        {2, 2, 2},
+        {1, 0, 1},
+        {0, 0, 0}
+    };
+
+    REQUIRE(verifica_jogo_da_velha(tabuleiro) == 2);
+}
