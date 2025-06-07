@@ -61,3 +61,12 @@ TEST_CASE("Vitoria na terceira linha para O") {
     };
     REQUIRE(verifica_jogo_da_velha(tabuleiro) == 2);
 }
+
+TEST_CASE("Vitoria na terceira linha para X") {
+    int tabuleiro[3][3] = {
+        {1, 0, 2},
+        {0, 1, 0},
+        {1, 1, 1}
+    };
+    REQUIRE(verifica_jogo_da_velha(tabuleiro) == 1);
+}
