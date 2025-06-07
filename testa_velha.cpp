@@ -142,3 +142,12 @@ TEST_CASE("Vitória na diagonal principal para O") {
     };
     REQUIRE(verifica_jogo_da_velha(tabuleiro) == 2);
 }
+
+TEST_CASE("Vitória na diagonal secundária para X") {
+    int tabuleiro[3][3] = {
+        {0, 0, 1},
+        {2, 1, 0},
+        {1, 2, 2}
+    };
+    REQUIRE(verifica_jogo_da_velha(tabuleiro) == 1);
+}
