@@ -1,0 +1,22 @@
+# Arquivos de build
+*.o
+*.out
+*.gcda
+*.gcno
+*.gcov
+
+# Executáveis
+testa_velha
+velha
+testa_romanos
+romanos
+
+# Arquivos temporários do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos do VSCode
+.vscode/
+
+# Outros
+*.log
