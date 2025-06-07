@@ -16,9 +16,8 @@ int verifica_jogo_da_velha(int tabuleiro[3][3]) {
             tabuleiro[1][0] == tabuleiro[2][0]) && tabuleiro[0][0] != 0)
             { return tabuleiro[0][0]; }  // Vitória na primeira coluna
         if ((tabuleiro[0][1] == tabuleiro[1][1] &&
-            tabuleiro[1][1] == tabuleiro[2][1]) && tabuleiro[0][1] == 1
-            && tabuleiro[0][1] != 0)
-            { return tabuleiro[0][1]; }  // Vitória na segunda coluna para X
+            tabuleiro[1][1] == tabuleiro[2][1]) && tabuleiro[0][1] != 0)
+            { return tabuleiro[0][1]; }  // Vitória na segunda coluna
     }
     return -1;  // Jogo indefinido
 }
