@@ -178,3 +178,30 @@ TEST_CASE("Jogo impossível - TODO O") {
     };
     REQUIRE(verifica_jogo_da_velha(tabuleiro) == -2);
 }
+
+TEST_CASE("Jogo impossível - TODO X") {
+    int tabuleiro[3][3] = {
+        {1, 1, 1},
+        {1, 1, 1},
+        {1, 1, 1}
+    };
+    REQUIRE(verifica_jogo_da_velha(tabuleiro) == -2);
+}
+
+TEST_CASE("Jogo impossível - número desigual de X e O") {
+    int tabuleiro[3][3] = {
+        {1, 1, 1},
+        {1, 0, 0},
+        {0, 0, 2}
+    };
+    REQUIRE(verifica_jogo_da_velha(tabuleiro) == -2);
+}
+
+TEST_CASE("Jogo impossível - dois vencedores") {
+    int tabuleiro[3][3] = {
+        {1, 1, 1},
+        {2, 2, 2},
+        {0, 0, 0}
+    };
+    REQUIRE(verifica_jogo_da_velha(tabuleiro) == -2);
+}
