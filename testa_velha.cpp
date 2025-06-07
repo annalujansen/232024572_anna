@@ -169,3 +169,12 @@ TEST_CASE("Empate") {
     };
     REQUIRE(verifica_jogo_da_velha(tabuleiro) == 0);
 }   
+
+TEST_CASE("Jogo impossível - TODO O") {
+    int tabuleiro[3][3] = {
+        {2, 2, 2},
+        {2, 2, 2},
+        {2, 2, 2}
+    };
+    REQUIRE(verifica_jogo_da_velha(tabuleiro) == -2);
+}   
