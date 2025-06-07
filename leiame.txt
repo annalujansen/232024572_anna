@@ -1,0 +1,6 @@
+O programa foi depurado utilizando o GDB. Foi inserido um breakpoint na função verifica_jogo_da_velha e utilizados os comandos run, next, step e print para inspecionar valores no tabuleiro durante a execução de testes. A depuração foi bem-sucedida.
+
+A cobertura de código foi verificada usando o gcov.
+O arquivo `src/velha.cpp` atingiu 100% de cobertura.
+Comando usado:
+  gcov src/velha.cpp

@@ -45,8 +45,9 @@ gcov:
 
 # Debug com gdb
 debug:
-	$(CXX) -g -std=c++17 -Wall -o $(BIN) $(SRC) $(TEST)
-
+	$(CXX) $(CXXFLAGS) -o $(BIN) $(SRC) $(TEST)
+	gdb $(BIN)
+	
 # Valgrind
 valgrind: $(BIN)
 	valgrind --leak-check=full --track-origins=yes ./$(BIN)
@@ -54,3 +55,7 @@ valgrind: $(BIN)
 # Limpa arquivos gerados
 clean:
 	rm -f src/*.o *.o *.gc* *.out $(BIN) *.gcov
+
+# Gera documentação com o Doxygen
+doc:
+	doxygen Doxyfile

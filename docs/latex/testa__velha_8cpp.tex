@@ -1,0 +1,650 @@
+\hypertarget{testa__velha_8cpp}{}\doxysection{testa\+\_\+velha.\+cpp File Reference}
+\label{testa__velha_8cpp}\index{testa\_velha.cpp@{testa\_velha.cpp}}
+{\ttfamily \#include \char`\"{}lib/catch.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}jogo/velha.\+hpp\char`\"{}}\newline
+Include dependency graph for testa\+\_\+velha.\+cpp\+:
+% FIG 0
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{testa__velha_8cpp_a656eb5868e824d59f489f910db438420}{CATCH\+\_\+\+CONFIG\+\_\+\+MAIN}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{testa__velha_8cpp_af0e3aaf49ba9e81d45aa438a5b3d4ca1}{TEST\+\_\+\+CASE}} (\char`\"{}Jogo indefinido com apenas um X\char`\"{}, \char`\"{}\mbox{[}indefinido\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{testa__velha_8cpp_a7a6997bb738144414e856f98cf2462c6}{TEST\+\_\+\+CASE}} (\char`\"{}Vitória na segunda linha para o jogador 2\char`\"{})
+\item 
+\mbox{\hyperlink{testa__velha_8cpp_aa9dce0bf439bead4b0368ab1c042e240}{TEST\+\_\+\+CASE}} (\char`\"{}Vitória na segunda linha para o jogador 1\char`\"{})
+\item 
+\mbox{\hyperlink{testa__velha_8cpp_a309469d542248f889f820408366ceeab}{TEST\+\_\+\+CASE}} (\char`\"{}Vitória na primeira linha para X\char`\"{})
+\item 
+\mbox{\hyperlink{testa__velha_8cpp_ab594b16c91a8658c21376301fc9a114e}{TEST\+\_\+\+CASE}} (\char`\"{}Vitória na primeira linha para O\char`\"{})
+\item 
+\mbox{\hyperlink{testa__velha_8cpp_aff3f3b6faa27b0f507a81b5641a009d1}{TEST\+\_\+\+CASE}} (\char`\"{}Vitoria na terceira linha para O\char`\"{})
+\item 
+\mbox{\hyperlink{testa__velha_8cpp_aadb7d1607827aaa5679109f808565044}{TEST\+\_\+\+CASE}} (\char`\"{}Vitoria na terceira linha para X\char`\"{})
+\item 
+\mbox{\hyperlink{testa__velha_8cpp_af196e763f40be0cac7f359add0e792eb}{TEST\+\_\+\+CASE}} (\char`\"{}Vitória na primeira coluna para X\char`\"{})
+\item 
+\mbox{\hyperlink{testa__velha_8cpp_af0cf7b39e41f4e8078b8f4b49254cda1}{TEST\+\_\+\+CASE}} (\char`\"{}Vitória na primeira coluna para O\char`\"{})
+\item 
+\mbox{\hyperlink{testa__velha_8cpp_a635fac088a228dba93ed5ce701f5b4ac}{TEST\+\_\+\+CASE}} (\char`\"{}Vitória na segunda coluna para X\char`\"{})
+\item 
+\mbox{\hyperlink{testa__velha_8cpp_a9bd3eed20234df81509ac13407b82029}{TEST\+\_\+\+CASE}} (\char`\"{}Vitória na segunda coluna para O\char`\"{})
+\item 
+\mbox{\hyperlink{testa__velha_8cpp_ae4058ef692bde6c803dbaf22c4c61417}{TEST\+\_\+\+CASE}} (\char`\"{}Vitória na terceira coluna para X\char`\"{})
+\item 
+\mbox{\hyperlink{testa__velha_8cpp_a03564fa20fa681722e675924254c0359}{TEST\+\_\+\+CASE}} (\char`\"{}Vitória na terceira coluna para O\char`\"{})
+\item 
+\mbox{\hyperlink{testa__velha_8cpp_a7e2c39f8830cec9d662fddeae3e153dd}{TEST\+\_\+\+CASE}} (\char`\"{}Vitória na diagonal principal para X\char`\"{})
+\item 
+\mbox{\hyperlink{testa__velha_8cpp_ae1a017b4ef231aa97e1a793d8d3a2645}{TEST\+\_\+\+CASE}} (\char`\"{}Vitória na diagonal principal para O\char`\"{})
+\item 
+\mbox{\hyperlink{testa__velha_8cpp_ad26de800c3d76a46e38de3e0bb5fff5d}{TEST\+\_\+\+CASE}} (\char`\"{}Vitória na diagonal secundária para X\char`\"{})
+\item 
+\mbox{\hyperlink{testa__velha_8cpp_a4dc33eec30e17a97d9b9c46af6a175cc}{TEST\+\_\+\+CASE}} (\char`\"{}Vitória na diagonal secundária para O\char`\"{})
+\item 
+\mbox{\hyperlink{testa__velha_8cpp_a59657f06be7a515175d0f1873c82b455}{TEST\+\_\+\+CASE}} (\char`\"{}Empate\char`\"{})
+\item 
+\mbox{\hyperlink{testa__velha_8cpp_a14cf7964b5c93e92c9bae2f487eec749}{TEST\+\_\+\+CASE}} (\char`\"{}Jogo impossível -\/ TODO O\char`\"{})
+\item 
+\mbox{\hyperlink{testa__velha_8cpp_a873512bf669c9647decc756340db811e}{TEST\+\_\+\+CASE}} (\char`\"{}Jogo impossível -\/ TODO X\char`\"{})
+\item 
+\mbox{\hyperlink{testa__velha_8cpp_af3fdbc35f56a09ffb5a5843e5747a7d8}{TEST\+\_\+\+CASE}} (\char`\"{}Jogo impossível -\/ número desigual de X e O\char`\"{})
+\item 
+\mbox{\hyperlink{testa__velha_8cpp_a527214535605858ac5678038a4878e93}{TEST\+\_\+\+CASE}} (\char`\"{}Jogo impossível -\/ dois vencedores\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{testa__velha_8cpp_a656eb5868e824d59f489f910db438420}\label{testa__velha_8cpp_a656eb5868e824d59f489f910db438420}} 
+\index{testa\_velha.cpp@{testa\_velha.cpp}!CATCH\_CONFIG\_MAIN@{CATCH\_CONFIG\_MAIN}}
+\index{CATCH\_CONFIG\_MAIN@{CATCH\_CONFIG\_MAIN}!testa\_velha.cpp@{testa\_velha.cpp}}
+\doxysubsubsection{\texorpdfstring{CATCH\_CONFIG\_MAIN}{CATCH\_CONFIG\_MAIN}}
+{\footnotesize\ttfamily \#define CATCH\+\_\+\+CONFIG\+\_\+\+MAIN}
+
+
+
+Definition at line 3 of file testa\+\_\+velha.\+cpp.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{testa__velha_8cpp_a59657f06be7a515175d0f1873c82b455}\label{testa__velha_8cpp_a59657f06be7a515175d0f1873c82b455}} 
+\index{testa\_velha.cpp@{testa\_velha.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!testa\_velha.cpp@{testa\_velha.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/22]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{\char`\"{}Empate\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 164 of file testa\+\_\+velha.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{164                     \{}
+\DoxyCodeLine{165     \textcolor{keywordtype}{int} tabuleiro[3][3] = \{}
+\DoxyCodeLine{166         \{1, 2, 1\},}
+\DoxyCodeLine{167         \{1, 1, 2\},}
+\DoxyCodeLine{168         \{2, 1, 2\}}
+\DoxyCodeLine{169     \};}
+\DoxyCodeLine{170     REQUIRE(\mbox{\hyperlink{velha_8cpp_a03ccb7f0bc04a53078f046aa50bb8455}{verifica\_jogo\_da\_velha}}(tabuleiro) == 0);}
+\DoxyCodeLine{171 \}}
+
+\end{DoxyCode}
+
+
+References verifica\+\_\+jogo\+\_\+da\+\_\+velha().
+
+\mbox{\Hypertarget{testa__velha_8cpp_a527214535605858ac5678038a4878e93}\label{testa__velha_8cpp_a527214535605858ac5678038a4878e93}} 
+\index{testa\_velha.cpp@{testa\_velha.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!testa\_velha.cpp@{testa\_velha.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/22]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{\char`\"{}Jogo impossível -\/ dois vencedores\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 200 of file testa\+\_\+velha.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{200                                                 \{}
+\DoxyCodeLine{201     \textcolor{keywordtype}{int} tabuleiro[3][3] = \{}
+\DoxyCodeLine{202         \{1, 1, 1\},}
+\DoxyCodeLine{203         \{2, 2, 2\},}
+\DoxyCodeLine{204         \{0, 0, 0\}}
+\DoxyCodeLine{205     \};}
+\DoxyCodeLine{206     REQUIRE(\mbox{\hyperlink{velha_8cpp_a03ccb7f0bc04a53078f046aa50bb8455}{verifica\_jogo\_da\_velha}}(tabuleiro) == -\/2);}
+\DoxyCodeLine{207 \}}
+
+\end{DoxyCode}
+
+
+References verifica\+\_\+jogo\+\_\+da\+\_\+velha().
+
+\mbox{\Hypertarget{testa__velha_8cpp_af3fdbc35f56a09ffb5a5843e5747a7d8}\label{testa__velha_8cpp_af3fdbc35f56a09ffb5a5843e5747a7d8}} 
+\index{testa\_velha.cpp@{testa\_velha.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!testa\_velha.cpp@{testa\_velha.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/22]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{\char`\"{}Jogo impossível -\/ número desigual de X e O\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 191 of file testa\+\_\+velha.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{191                                                           \{}
+\DoxyCodeLine{192     \textcolor{keywordtype}{int} tabuleiro[3][3] = \{}
+\DoxyCodeLine{193         \{1, 1, 1\},}
+\DoxyCodeLine{194         \{1, 0, 0\},}
+\DoxyCodeLine{195         \{0, 0, 2\}}
+\DoxyCodeLine{196     \};}
+\DoxyCodeLine{197     REQUIRE(\mbox{\hyperlink{velha_8cpp_a03ccb7f0bc04a53078f046aa50bb8455}{verifica\_jogo\_da\_velha}}(tabuleiro) == -\/2);}
+\DoxyCodeLine{198 \}}
+
+\end{DoxyCode}
+
+
+References verifica\+\_\+jogo\+\_\+da\+\_\+velha().
+
+\mbox{\Hypertarget{testa__velha_8cpp_a14cf7964b5c93e92c9bae2f487eec749}\label{testa__velha_8cpp_a14cf7964b5c93e92c9bae2f487eec749}} 
+\index{testa\_velha.cpp@{testa\_velha.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!testa\_velha.cpp@{testa\_velha.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [4/22]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{\char`\"{}Jogo impossível -\/ TODO O\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 173 of file testa\+\_\+velha.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{173                                        \{}
+\DoxyCodeLine{174     \textcolor{keywordtype}{int} tabuleiro[3][3] = \{}
+\DoxyCodeLine{175         \{2, 2, 2\},}
+\DoxyCodeLine{176         \{2, 2, 2\},}
+\DoxyCodeLine{177         \{2, 2, 2\}}
+\DoxyCodeLine{178     \};}
+\DoxyCodeLine{179     REQUIRE(\mbox{\hyperlink{velha_8cpp_a03ccb7f0bc04a53078f046aa50bb8455}{verifica\_jogo\_da\_velha}}(tabuleiro) == -\/2);}
+\DoxyCodeLine{180 \}}
+
+\end{DoxyCode}
+
+
+References verifica\+\_\+jogo\+\_\+da\+\_\+velha().
+
+\mbox{\Hypertarget{testa__velha_8cpp_a873512bf669c9647decc756340db811e}\label{testa__velha_8cpp_a873512bf669c9647decc756340db811e}} 
+\index{testa\_velha.cpp@{testa\_velha.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!testa\_velha.cpp@{testa\_velha.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [5/22]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{\char`\"{}Jogo impossível -\/ TODO X\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 182 of file testa\+\_\+velha.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{182                                        \{}
+\DoxyCodeLine{183     \textcolor{keywordtype}{int} tabuleiro[3][3] = \{}
+\DoxyCodeLine{184         \{1, 1, 1\},}
+\DoxyCodeLine{185         \{1, 1, 1\},}
+\DoxyCodeLine{186         \{1, 1, 1\}}
+\DoxyCodeLine{187     \};}
+\DoxyCodeLine{188     REQUIRE(\mbox{\hyperlink{velha_8cpp_a03ccb7f0bc04a53078f046aa50bb8455}{verifica\_jogo\_da\_velha}}(tabuleiro) == -\/2);}
+\DoxyCodeLine{189 \}}
+
+\end{DoxyCode}
+
+
+References verifica\+\_\+jogo\+\_\+da\+\_\+velha().
+
+\mbox{\Hypertarget{testa__velha_8cpp_af0e3aaf49ba9e81d45aa438a5b3d4ca1}\label{testa__velha_8cpp_af0e3aaf49ba9e81d45aa438a5b3d4ca1}} 
+\index{testa\_velha.cpp@{testa\_velha.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!testa\_velha.cpp@{testa\_velha.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [6/22]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{\char`\"{}Jogo indefinido com apenas um X\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}indefinido\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 7 of file testa\+\_\+velha.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7                                                              \{}
+\DoxyCodeLine{8     \textcolor{keywordtype}{int} tabuleiro[3][3] = \{}
+\DoxyCodeLine{9         \{1, 0, 0\},}
+\DoxyCodeLine{10         \{0, 0, 0\},}
+\DoxyCodeLine{11         \{0, 0, 0\}}
+\DoxyCodeLine{12     \};}
+\DoxyCodeLine{13     REQUIRE(\mbox{\hyperlink{velha_8cpp_a03ccb7f0bc04a53078f046aa50bb8455}{verifica\_jogo\_da\_velha}}(tabuleiro) == -\/1);}
+\DoxyCodeLine{14 \}}
+
+\end{DoxyCode}
+
+
+References verifica\+\_\+jogo\+\_\+da\+\_\+velha().
+
+\mbox{\Hypertarget{testa__velha_8cpp_aff3f3b6faa27b0f507a81b5641a009d1}\label{testa__velha_8cpp_aff3f3b6faa27b0f507a81b5641a009d1}} 
+\index{testa\_velha.cpp@{testa\_velha.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!testa\_velha.cpp@{testa\_velha.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [7/22]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{\char`\"{}Vitoria na terceira linha para O\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 56 of file testa\+\_\+velha.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56                                               \{}
+\DoxyCodeLine{57     \textcolor{keywordtype}{int} tabuleiro[3][3] = \{}
+\DoxyCodeLine{58         \{1, 0, 1\},}
+\DoxyCodeLine{59         \{0, 1, 0\},}
+\DoxyCodeLine{60         \{2, 2, 2\}}
+\DoxyCodeLine{61     \};}
+\DoxyCodeLine{62     REQUIRE(\mbox{\hyperlink{velha_8cpp_a03ccb7f0bc04a53078f046aa50bb8455}{verifica\_jogo\_da\_velha}}(tabuleiro) == 2);}
+\DoxyCodeLine{63 \}}
+
+\end{DoxyCode}
+
+
+References verifica\+\_\+jogo\+\_\+da\+\_\+velha().
+
+\mbox{\Hypertarget{testa__velha_8cpp_aadb7d1607827aaa5679109f808565044}\label{testa__velha_8cpp_aadb7d1607827aaa5679109f808565044}} 
+\index{testa\_velha.cpp@{testa\_velha.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!testa\_velha.cpp@{testa\_velha.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [8/22]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{\char`\"{}Vitoria na terceira linha para X\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 65 of file testa\+\_\+velha.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65                                               \{}
+\DoxyCodeLine{66     \textcolor{keywordtype}{int} tabuleiro[3][3] = \{}
+\DoxyCodeLine{67         \{2, 0, 2\},}
+\DoxyCodeLine{68         \{0, 2, 0\},}
+\DoxyCodeLine{69         \{1, 1, 1\}}
+\DoxyCodeLine{70     \};}
+\DoxyCodeLine{71     REQUIRE(\mbox{\hyperlink{velha_8cpp_a03ccb7f0bc04a53078f046aa50bb8455}{verifica\_jogo\_da\_velha}}(tabuleiro) == 1);}
+\DoxyCodeLine{72 \}}
+
+\end{DoxyCode}
+
+
+References verifica\+\_\+jogo\+\_\+da\+\_\+velha().
+
+\mbox{\Hypertarget{testa__velha_8cpp_ae1a017b4ef231aa97e1a793d8d3a2645}\label{testa__velha_8cpp_ae1a017b4ef231aa97e1a793d8d3a2645}} 
+\index{testa\_velha.cpp@{testa\_velha.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!testa\_velha.cpp@{testa\_velha.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [9/22]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{\char`\"{}Vitória na diagonal principal para O\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 137 of file testa\+\_\+velha.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{137                                                    \{}
+\DoxyCodeLine{138     \textcolor{keywordtype}{int} tabuleiro[3][3] = \{}
+\DoxyCodeLine{139         \{2, 0, 1\},}
+\DoxyCodeLine{140         \{0, 2, 1\},}
+\DoxyCodeLine{141         \{1, 0, 2\}}
+\DoxyCodeLine{142     \};}
+\DoxyCodeLine{143     REQUIRE(\mbox{\hyperlink{velha_8cpp_a03ccb7f0bc04a53078f046aa50bb8455}{verifica\_jogo\_da\_velha}}(tabuleiro) == 2);}
+\DoxyCodeLine{144 \}}
+
+\end{DoxyCode}
+
+
+References verifica\+\_\+jogo\+\_\+da\+\_\+velha().
+
+\mbox{\Hypertarget{testa__velha_8cpp_a7e2c39f8830cec9d662fddeae3e153dd}\label{testa__velha_8cpp_a7e2c39f8830cec9d662fddeae3e153dd}} 
+\index{testa\_velha.cpp@{testa\_velha.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!testa\_velha.cpp@{testa\_velha.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [10/22]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{\char`\"{}Vitória na diagonal principal para X\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 128 of file testa\+\_\+velha.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{128                                                    \{}
+\DoxyCodeLine{129     \textcolor{keywordtype}{int} tabuleiro[3][3] = \{}
+\DoxyCodeLine{130         \{1, 0, 2\},}
+\DoxyCodeLine{131         \{0, 1, 0\},}
+\DoxyCodeLine{132         \{2, 0, 1\}}
+\DoxyCodeLine{133     \};}
+\DoxyCodeLine{134     REQUIRE(\mbox{\hyperlink{velha_8cpp_a03ccb7f0bc04a53078f046aa50bb8455}{verifica\_jogo\_da\_velha}}(tabuleiro) == 1);}
+\DoxyCodeLine{135 \}}
+
+\end{DoxyCode}
+
+
+References verifica\+\_\+jogo\+\_\+da\+\_\+velha().
+
+\mbox{\Hypertarget{testa__velha_8cpp_a4dc33eec30e17a97d9b9c46af6a175cc}\label{testa__velha_8cpp_a4dc33eec30e17a97d9b9c46af6a175cc}} 
+\index{testa\_velha.cpp@{testa\_velha.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!testa\_velha.cpp@{testa\_velha.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [11/22]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{\char`\"{}Vitória na diagonal secundária para O\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 155 of file testa\+\_\+velha.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{155                                                      \{}
+\DoxyCodeLine{156     \textcolor{keywordtype}{int} tabuleiro[3][3] = \{}
+\DoxyCodeLine{157         \{0, 0, 2\},}
+\DoxyCodeLine{158         \{1, 2, 0\},}
+\DoxyCodeLine{159         \{2, 1, 1\}}
+\DoxyCodeLine{160     \};}
+\DoxyCodeLine{161     REQUIRE(\mbox{\hyperlink{velha_8cpp_a03ccb7f0bc04a53078f046aa50bb8455}{verifica\_jogo\_da\_velha}}(tabuleiro) == 2);}
+\DoxyCodeLine{162 \}}
+
+\end{DoxyCode}
+
+
+References verifica\+\_\+jogo\+\_\+da\+\_\+velha().
+
+\mbox{\Hypertarget{testa__velha_8cpp_ad26de800c3d76a46e38de3e0bb5fff5d}\label{testa__velha_8cpp_ad26de800c3d76a46e38de3e0bb5fff5d}} 
+\index{testa\_velha.cpp@{testa\_velha.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!testa\_velha.cpp@{testa\_velha.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [12/22]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{\char`\"{}Vitória na diagonal secundária para X\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 146 of file testa\+\_\+velha.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{146                                                      \{}
+\DoxyCodeLine{147     \textcolor{keywordtype}{int} tabuleiro[3][3] = \{}
+\DoxyCodeLine{148         \{0, 0, 1\},}
+\DoxyCodeLine{149         \{2, 1, 0\},}
+\DoxyCodeLine{150         \{1, 2, 2\}}
+\DoxyCodeLine{151     \};}
+\DoxyCodeLine{152     REQUIRE(\mbox{\hyperlink{velha_8cpp_a03ccb7f0bc04a53078f046aa50bb8455}{verifica\_jogo\_da\_velha}}(tabuleiro) == 1);}
+\DoxyCodeLine{153 \}}
+
+\end{DoxyCode}
+
+
+References verifica\+\_\+jogo\+\_\+da\+\_\+velha().
+
+\mbox{\Hypertarget{testa__velha_8cpp_af0cf7b39e41f4e8078b8f4b49254cda1}\label{testa__velha_8cpp_af0cf7b39e41f4e8078b8f4b49254cda1}} 
+\index{testa\_velha.cpp@{testa\_velha.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!testa\_velha.cpp@{testa\_velha.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [13/22]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{\char`\"{}Vitória na primeira coluna para O\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 83 of file testa\+\_\+velha.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83                                                 \{}
+\DoxyCodeLine{84     \textcolor{keywordtype}{int} tabuleiro[3][3] = \{}
+\DoxyCodeLine{85         \{2, 0, 1\},}
+\DoxyCodeLine{86         \{2, 1, 0\},}
+\DoxyCodeLine{87         \{2, 0, 1\}}
+\DoxyCodeLine{88     \};}
+\DoxyCodeLine{89     REQUIRE(\mbox{\hyperlink{velha_8cpp_a03ccb7f0bc04a53078f046aa50bb8455}{verifica\_jogo\_da\_velha}}(tabuleiro) == 2);}
+\DoxyCodeLine{90 \}}
+
+\end{DoxyCode}
+
+
+References verifica\+\_\+jogo\+\_\+da\+\_\+velha().
+
+\mbox{\Hypertarget{testa__velha_8cpp_af196e763f40be0cac7f359add0e792eb}\label{testa__velha_8cpp_af196e763f40be0cac7f359add0e792eb}} 
+\index{testa\_velha.cpp@{testa\_velha.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!testa\_velha.cpp@{testa\_velha.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [14/22]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{\char`\"{}Vitória na primeira coluna para X\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 74 of file testa\+\_\+velha.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{74                                                 \{}
+\DoxyCodeLine{75     \textcolor{keywordtype}{int} tabuleiro[3][3] = \{}
+\DoxyCodeLine{76         \{1, 0, 2\},}
+\DoxyCodeLine{77         \{1, 2, 0\},}
+\DoxyCodeLine{78         \{1, 0, 2\}}
+\DoxyCodeLine{79     \};}
+\DoxyCodeLine{80     REQUIRE(\mbox{\hyperlink{velha_8cpp_a03ccb7f0bc04a53078f046aa50bb8455}{verifica\_jogo\_da\_velha}}(tabuleiro) == 1);}
+\DoxyCodeLine{81 \}}
+
+\end{DoxyCode}
+
+
+References verifica\+\_\+jogo\+\_\+da\+\_\+velha().
+
+\mbox{\Hypertarget{testa__velha_8cpp_ab594b16c91a8658c21376301fc9a114e}\label{testa__velha_8cpp_ab594b16c91a8658c21376301fc9a114e}} 
+\index{testa\_velha.cpp@{testa\_velha.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!testa\_velha.cpp@{testa\_velha.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [15/22]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{\char`\"{}Vitória na primeira linha para O\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 46 of file testa\+\_\+velha.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46                                                \{}
+\DoxyCodeLine{47     \textcolor{keywordtype}{int} tabuleiro[3][3] = \{}
+\DoxyCodeLine{48         \{2, 2, 2\},}
+\DoxyCodeLine{49         \{1, 0, 1\},}
+\DoxyCodeLine{50         \{1, 1, 0\}}
+\DoxyCodeLine{51     \};}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53     REQUIRE(\mbox{\hyperlink{velha_8cpp_a03ccb7f0bc04a53078f046aa50bb8455}{verifica\_jogo\_da\_velha}}(tabuleiro) == 2);}
+\DoxyCodeLine{54 \}}
+
+\end{DoxyCode}
+
+
+References verifica\+\_\+jogo\+\_\+da\+\_\+velha().
+
+\mbox{\Hypertarget{testa__velha_8cpp_a309469d542248f889f820408366ceeab}\label{testa__velha_8cpp_a309469d542248f889f820408366ceeab}} 
+\index{testa\_velha.cpp@{testa\_velha.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!testa\_velha.cpp@{testa\_velha.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [16/22]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{\char`\"{}Vitória na primeira linha para X\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 36 of file testa\+\_\+velha.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{36                                                \{}
+\DoxyCodeLine{37     \textcolor{keywordtype}{int} tabuleiro[3][3] = \{}
+\DoxyCodeLine{38         \{1, 1, 1\},}
+\DoxyCodeLine{39         \{2, 0, 2\},}
+\DoxyCodeLine{40         \{0, 0, 0\}}
+\DoxyCodeLine{41     \};}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     REQUIRE(\mbox{\hyperlink{velha_8cpp_a03ccb7f0bc04a53078f046aa50bb8455}{verifica\_jogo\_da\_velha}}(tabuleiro) == 1);}
+\DoxyCodeLine{44 \}}
+
+\end{DoxyCode}
+
+
+References verifica\+\_\+jogo\+\_\+da\+\_\+velha().
+
+\mbox{\Hypertarget{testa__velha_8cpp_a9bd3eed20234df81509ac13407b82029}\label{testa__velha_8cpp_a9bd3eed20234df81509ac13407b82029}} 
+\index{testa\_velha.cpp@{testa\_velha.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!testa\_velha.cpp@{testa\_velha.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [17/22]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{\char`\"{}Vitória na segunda coluna para O\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 101 of file testa\+\_\+velha.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{101                                                \{}
+\DoxyCodeLine{102     \textcolor{keywordtype}{int} tabuleiro[3][3] = \{}
+\DoxyCodeLine{103         \{1, 2, 1\},}
+\DoxyCodeLine{104         \{0, 2, 1\},}
+\DoxyCodeLine{105         \{1, 2, 0\}}
+\DoxyCodeLine{106     \};}
+\DoxyCodeLine{107     REQUIRE(\mbox{\hyperlink{velha_8cpp_a03ccb7f0bc04a53078f046aa50bb8455}{verifica\_jogo\_da\_velha}}(tabuleiro) == 2);}
+\DoxyCodeLine{108 \}}
+
+\end{DoxyCode}
+
+
+References verifica\+\_\+jogo\+\_\+da\+\_\+velha().
+
+\mbox{\Hypertarget{testa__velha_8cpp_a635fac088a228dba93ed5ce701f5b4ac}\label{testa__velha_8cpp_a635fac088a228dba93ed5ce701f5b4ac}} 
+\index{testa\_velha.cpp@{testa\_velha.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!testa\_velha.cpp@{testa\_velha.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [18/22]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{\char`\"{}Vitória na segunda coluna para X\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 92 of file testa\+\_\+velha.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{92                                                \{}
+\DoxyCodeLine{93     \textcolor{keywordtype}{int} tabuleiro[3][3] = \{}
+\DoxyCodeLine{94         \{0, 1, 2\},}
+\DoxyCodeLine{95         \{0, 1, 0\},}
+\DoxyCodeLine{96         \{2, 1, 0\}}
+\DoxyCodeLine{97     \};}
+\DoxyCodeLine{98     REQUIRE(\mbox{\hyperlink{velha_8cpp_a03ccb7f0bc04a53078f046aa50bb8455}{verifica\_jogo\_da\_velha}}(tabuleiro) == 1);}
+\DoxyCodeLine{99 \}}
+
+\end{DoxyCode}
+
+
+References verifica\+\_\+jogo\+\_\+da\+\_\+velha().
+
+\mbox{\Hypertarget{testa__velha_8cpp_aa9dce0bf439bead4b0368ab1c042e240}\label{testa__velha_8cpp_aa9dce0bf439bead4b0368ab1c042e240}} 
+\index{testa\_velha.cpp@{testa\_velha.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!testa\_velha.cpp@{testa\_velha.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [19/22]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{\char`\"{}Vitória na segunda linha para o jogador 1\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 26 of file testa\+\_\+velha.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26                                                         \{}
+\DoxyCodeLine{27     \textcolor{keywordtype}{int} tabuleiro[3][3] = \{}
+\DoxyCodeLine{28         \{1, 0, 2\},}
+\DoxyCodeLine{29         \{1, 1, 1\},}
+\DoxyCodeLine{30         \{2, 0, 2\}}
+\DoxyCodeLine{31     \};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     REQUIRE(\mbox{\hyperlink{velha_8cpp_a03ccb7f0bc04a53078f046aa50bb8455}{verifica\_jogo\_da\_velha}}(tabuleiro) == 1);}
+\DoxyCodeLine{34 \}}
+
+\end{DoxyCode}
+
+
+References verifica\+\_\+jogo\+\_\+da\+\_\+velha().
+
+\mbox{\Hypertarget{testa__velha_8cpp_a7a6997bb738144414e856f98cf2462c6}\label{testa__velha_8cpp_a7a6997bb738144414e856f98cf2462c6}} 
+\index{testa\_velha.cpp@{testa\_velha.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!testa\_velha.cpp@{testa\_velha.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [20/22]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{\char`\"{}Vitória na segunda linha para o jogador 2\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 16 of file testa\+\_\+velha.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16                                                         \{}
+\DoxyCodeLine{17     \textcolor{keywordtype}{int} tabuleiro[3][3] = \{}
+\DoxyCodeLine{18         \{1, 1, 2\},}
+\DoxyCodeLine{19         \{2, 2, 2\},}
+\DoxyCodeLine{20         \{1, 0, 1\}}
+\DoxyCodeLine{21     \};}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     REQUIRE(\mbox{\hyperlink{velha_8cpp_a03ccb7f0bc04a53078f046aa50bb8455}{verifica\_jogo\_da\_velha}}(tabuleiro) == 2);}
+\DoxyCodeLine{24 \}}
+
+\end{DoxyCode}
+
+
+References verifica\+\_\+jogo\+\_\+da\+\_\+velha().
+
+\mbox{\Hypertarget{testa__velha_8cpp_a03564fa20fa681722e675924254c0359}\label{testa__velha_8cpp_a03564fa20fa681722e675924254c0359}} 
+\index{testa\_velha.cpp@{testa\_velha.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!testa\_velha.cpp@{testa\_velha.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [21/22]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{\char`\"{}Vitória na terceira coluna para O\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 119 of file testa\+\_\+velha.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{119                                                 \{}
+\DoxyCodeLine{120     \textcolor{keywordtype}{int} tabuleiro[3][3] = \{}
+\DoxyCodeLine{121         \{1, 1, 2\},}
+\DoxyCodeLine{122         \{0, 1, 2\},}
+\DoxyCodeLine{123         \{1, 0, 2\}}
+\DoxyCodeLine{124     \};}
+\DoxyCodeLine{125     REQUIRE(\mbox{\hyperlink{velha_8cpp_a03ccb7f0bc04a53078f046aa50bb8455}{verifica\_jogo\_da\_velha}}(tabuleiro) == 2);}
+\DoxyCodeLine{126 \}}
+
+\end{DoxyCode}
+
+
+References verifica\+\_\+jogo\+\_\+da\+\_\+velha().
+
+\mbox{\Hypertarget{testa__velha_8cpp_ae4058ef692bde6c803dbaf22c4c61417}\label{testa__velha_8cpp_ae4058ef692bde6c803dbaf22c4c61417}} 
+\index{testa\_velha.cpp@{testa\_velha.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!testa\_velha.cpp@{testa\_velha.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [22/22]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{\char`\"{}Vitória na terceira coluna para X\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 110 of file testa\+\_\+velha.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{110                                                 \{}
+\DoxyCodeLine{111     \textcolor{keywordtype}{int} tabuleiro[3][3] = \{}
+\DoxyCodeLine{112         \{0, 2, 1\},}
+\DoxyCodeLine{113         \{0, 0, 1\},}
+\DoxyCodeLine{114         \{2, 0, 1\}}
+\DoxyCodeLine{115     \};}
+\DoxyCodeLine{116     REQUIRE(\mbox{\hyperlink{velha_8cpp_a03ccb7f0bc04a53078f046aa50bb8455}{verifica\_jogo\_da\_velha}}(tabuleiro) == 1);}
+\DoxyCodeLine{117 \}}
+
+\end{DoxyCode}
+
+
+References verifica\+\_\+jogo\+\_\+da\+\_\+velha().
+
