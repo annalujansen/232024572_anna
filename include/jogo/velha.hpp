@@ -1,6 +1,6 @@
 // Copyright 2025 <Anna Luiza Jansen>
-#ifndef VELHA_HPP_
-#define VELHA_HPP_
+#ifndef INCLUDE_JOGO_VELHA_HPP_
+#define INCLUDE_JOGO_VELHA_HPP_
 
 /**
  * @brief Verifica o estado de uma partida de jogo da velha.
@@ -16,4 +16,4 @@
  */
 int verifica_jogo_da_velha(int tabuleiro[3][3]);
 
-#endif  // VELHA_HPP_
+#endif  // INCLUDE_JOGO_VELHA_HPP_
