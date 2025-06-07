@@ -3,11 +3,10 @@
 
 int verifica_jogo_da_velha(int tabuleiro[3][3])
 {
-    if (tabuleiro[1][0] == 2 &&
-        tabuleiro[1][1] == 2 &&
-        tabuleiro[1][2] == 2)
-    {
-        return 2;
+    for (int i=0; i<3; i++) {
+        if ((tabuleiro[1][0] == tabuleiro[1][1] && tabuleiro[1][1] == tabuleiro[1][2]) && tabuleiro[1][0] != 0) {
+            return tabuleiro[1][0]; // Vitória na segunda linha
+        }
     }
     return -1; // Jogo indefinido
 }
