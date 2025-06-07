@@ -79,3 +79,12 @@ TEST_CASE("Vitória na primeira coluna para X") {
     };
     REQUIRE(verifica_jogo_da_velha(tabuleiro) == 1);
 }
+
+TEST_CASE("Vitória na primeira coluna para O") {
+    int tabuleiro[3][3] = {
+        {2, 0, 1},
+        {2, 1, 0},
+        {2, 0, 1}
+    };
+    REQUIRE(verifica_jogo_da_velha(tabuleiro) == 2);
+}
