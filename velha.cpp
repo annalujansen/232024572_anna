@@ -1,7 +1,13 @@
 // Copyright 2025 <Anna Luiza Jansen>
 #include "velha.hpp"
 
-int verifica_jogo_da_velha(int tabuleiro[3][3]) {
-    // Inicialmente retorna -1 sempre (jogo indefinido)
-    return -1;
+int verifica_jogo_da_velha(int tabuleiro[3][3])
+{
+    if (tabuleiro[1][0] == 2 &&
+        tabuleiro[1][1] == 2 &&
+        tabuleiro[1][2] == 2)
+    {
+        return 2;
+    }
+    return -1; // Jogo indefinido
 }
