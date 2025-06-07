@@ -25,8 +25,7 @@ int verifica_jogo_da_velha(int tabuleiro[3][3]) {
             tabuleiro[1][1] == tabuleiro[2][2]) && tabuleiro[0][0] != 0)
             { return tabuleiro[0][0]; }  // Vitória na diagonal principal
         if ((tabuleiro[0][2] == tabuleiro[1][1] &&
-            tabuleiro[1][1] == tabuleiro[2][0]) && tabuleiro[0][2] == 1
-            && tabuleiro[0][2] != 0)
+            tabuleiro[1][1] == tabuleiro[2][0]) && tabuleiro[0][2] != 0)
             { return tabuleiro[0][2]; }  // Vitória na diagonal secundária
     }
     return -1;  // Jogo indefinido
