@@ -28,13 +28,21 @@ A função deve retornar:
 
 ```
 232024572_anna/
-├── catch.hpp
-├── jogo/
-│   └── velha.hpp
+├── include/
+│   └── jogo/
+│       └── velha.hpp
+├── lib/
+│   └── catch.hpp
+├── src/
+│   ├── velha.cpp
+│   ├── velha.gcda
+│   └── velha.gcno
+├── testa_velha.cpp
 ├── Makefile
+├── Dockerfile
+├── Doxyfile
 ├── leiame.txt
-├── valgrind.rpt
-├── .git/
+├── .gitignore
 └── README.md
 ```
 
