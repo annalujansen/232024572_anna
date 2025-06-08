@@ -31,13 +31,11 @@ A função deve retornar:
 ├── catch.hpp
 ├── jogo/
 │   └── velha.hpp
-├── romanos.cpp  ← pode ser removido se não fizer parte deste projeto
-├── testa_romanos.cpp
 ├── Makefile
 ├── leiame.txt
 ├── valgrind.rpt
 ├── .git/
-└── README.md  ← este arquivo
+└── README.md
 ```
 
 ## ⚙️ Compilação e execução
