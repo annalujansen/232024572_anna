@@ -5,6 +5,7 @@ int verifica_jogo_da_velha(int tabuleiro[3][3]) {
     int countX = 0, countO = 0;
     int vitoriaX = 0, vitoriaO = 0;
 
+    // Conta o número de jogadas de X e O
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             if (tabuleiro[i][j] == 1)
@@ -21,6 +22,7 @@ int verifica_jogo_da_velha(int tabuleiro[3][3]) {
 
     // Verifica vitórias em linhas
     for (int i = 0; i < 3; i++) {
+        // Verifica se todas as posições da linha são iguais e não vazias
         if (tabuleiro[i][0] == tabuleiro[i][1] &&
             tabuleiro[i][1] == tabuleiro[i][2] &&
             tabuleiro[i][0] != 0) {
@@ -39,7 +41,7 @@ int verifica_jogo_da_velha(int tabuleiro[3][3]) {
         }
     }
 
-    // Verifica vitória na diagonal principal
+    // Verifica vitória na diagonal principal (↘)
     if (tabuleiro[0][0] == tabuleiro[1][1] &&
         tabuleiro[1][1] == tabuleiro[2][2] &&
         tabuleiro[0][0] != 0) {
@@ -47,7 +49,7 @@ int verifica_jogo_da_velha(int tabuleiro[3][3]) {
         else vitoriaO++;
     }
 
-    // Verifica vitória na diagonal secundária
+    // Verifica vitória na diagonal secundária (↙)
     if (tabuleiro[0][2] == tabuleiro[1][1] &&
         tabuleiro[1][1] == tabuleiro[2][0] &&
         tabuleiro[0][2] != 0) {
@@ -60,10 +62,11 @@ int verifica_jogo_da_velha(int tabuleiro[3][3]) {
         return -2;
     }
 
+    // Verifica se há um vencedor
     if (vitoriaX > 0) return 1;
     if (vitoriaO > 0) return 2;
 
-    // Verifica empate
+    // Verifica se o tabuleiro está cheio (empate)
     bool cheio = true;
     for (int i = 0; i < 3 && cheio; i++) {
         for (int j = 0; j < 3; j++) {
